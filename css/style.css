@@ -1,0 +1,123 @@
+body {
+    margin: 0 auto;
+    background: #acb6e5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #86fde8, #acb6e5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Domine',
+        serif;
+
+
+}
+
+
+
+#title {
+    text-align: center;
+    font-family: 'Monoton',
+        cursive;
+}
+
+.location {
+    text-align: center;
+    margin: 2px;
+    font-family: 'Monoton',
+        cursive;
+}
+
+.inputCity {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-family: 'Monoton',
+        cursive;
+}
+
+.weather {
+    margin: 0 auto;
+    width: 80%;
+
+    z-index: 555;
+    color: aliceblue;
+    text-align: center;
+}
+
+
+.currentWeather {
+
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0.8;
+
+
+}
+
+.hourly-weather {
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    opacity: .9;
+}
+
+
+
+.futureWeater {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+
+
+}
+
+.futureWeater1 {
+    color: aliceblue;
+    background-color: black;
+    opacity: 0.6;
+
+}
+
+.futureWeater2 {
+    color: aliceblue;
+    background-color: black;
+    opacity: 0.4;
+
+}
+
+.futureWeater3 {
+
+    color: aliceblue;
+    background-color: black;
+    opacity: 0.7;
+
+}
+
+.days,
+.temp-future {
+    margin-top: 20px;
+}
+
+
+.display-weather {
+    display: none;
+
+}
+
+#dailyIcon,
+#current-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#hourly-weather {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.changeTemp {
+    float: right;
+    margin-right: 50px;
+    font-size: 20px;
+}

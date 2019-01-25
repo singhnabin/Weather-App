@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Domine|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <title>Weather App</title>
+
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <div class="row">
+        <div class="col-md-12 searchDiv">
+            <h1 id="title">Weather Forecast </h1>
+
+            <div class="location">
+                <button class="btn btn-primary" onclick=" getLocation()" class="getLocation">Get Location</button>
+            </div>
+            <div class="inputCity form-inline">
+                <input class="form-control" type="text" placeholder="enter city name" id="city">
+
+                <button onclick="getCityWeather()" class="btn btn-success search">search</button>
+                <p id="message"></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row display-weather weather" id="display-weather">
+
+        <div class="col-md-12 col-sm-12 currentWeather">
+
+            <h2 id="place"></h2>
+            <!-- <p class="changeTemp" onclick="changeTemp()">°F</p> -->
+            <h2>
+                <i id="current-icon"> </i>
+            </h2>
+            <!-- <i id="current-icon"> </i> -->
+            <h1><span id="current-temperature"></span> °F</h1>
+            <h5 id="description">
+                <span id="current-summary"></span>
+                <br>
+                Wind Speed: <span id="current-windspeed"></span>
+                <br>
+                Humidity: <span id="current-humidity"></span>
+                <br>
+                Visibility: <span id="current-visibility"></span>
+            </h5>
+
+
+
+            <!-- </div> -->
+        </div>
+        <hr>
+
+        <div class="hourly-weather">
+            <h1>Hourly Weather</h1>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h5 id="hourly-time"></h5>
+                    <h3><span id="hourly-temperature"></span> °F</h3>
+                    <p id="hourly-summary"></p>
+
+                </div>
+                <div class="col-sm-2">
+                    <h5 id="hourly-time"></h5>
+                    <h3><span id="hourly-temperature"></span> °F</h3>
+                    <p id="hourly-summary"></p>
+                </div>
+                <div class="col-sm-2">
+                    <h5 id="hourly-time"></h5>
+                    <h3><span id="hourly-temperature"></span> °F
+
+                    </h3>
+                    <p id="hourly-summary"></p>
+                </div>
+                <div class="col-sm-2">
+                    <h5 id="hourly-time"></h5>
+                    <h3><span id="hourly-temperature"></span> °F</h3>
+                    <p id="hourly-summary"></p>
+                </div>
+                <div class="col-sm-2">
+                    <h5 id="hourly-time"></h5>
+                    <h3><span id="hourly-temperature"></span> °F</h3>
+                    <p id="hourly-summary"></p>
+                </div>
+                <div class=" col-sm-2">
+                    <h5 id="hourly-time"></h5>
+                    <h3><span id="hourly-temperature"></span> °F</h3>
+                    <p id="hourly-summary"></p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="row futureWeater">
+            <div class="col-md-4">
+                <div class="futureWeater1">
+                    <h1 class="days"></h1>
+                    <i id="dailyIcon"></i>
+                    <h2><span class="temp-future"></span> °F</h2>
+                    <h4 id="daily-summary"></h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="futureWeater2">
+                    <h1 class="days"></h1>
+                    <i id="dailyIcon"></i>
+                    <h2><span class="temp-future"></span> °F</h2>
+                    <h4 id="daily-summary"></h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="futureWeater3">
+                    <h1 class="days"></h1>
+                    <i id="dailyIcon"></i>
+                    <h2><span class="temp-future"></span> °F</h2>
+                    <h4 id="daily-summary"></h4>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div>s -->
+
+    </div>
+    <!-- <i class="wi wi-day-rain" style="height: 400px; width: 500px;"></i>-->
+<!--
+
+-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
